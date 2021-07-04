@@ -9,33 +9,38 @@ public class First_class {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        //operadores aritmeticos
+        //Arithmetic operators
         int resultado = 45 + 12;
         resultado = 45 - 12;
         resultado = 45 * 12;
         resultado = 45 / 12;
         resultado = 45 % 12;
-        //operadores unarios
+        
+        //Unary operators
         resultado++;
         resultado = resultado--;
         boolean respuesta = true;
         //!respuesta;
-        //algebra booleana
+
+        //Boolean algebra
         respuesta = 5 < 8;
         respuesta = 5 > 8;
         respuesta = 5 >= 8;
         respuesta = 5 <= 8;
         respuesta = 5 == 8;
         respuesta = 5 != 8;
-        //operadores logicos
+
+        //Logic operators
         respuesta = 5 < 8 && 4 >= 6;
         respuesta = 5 < 8 || 4 >= 6;
-        //operadores bit a bit
+
+        //Bitwise operators
         // & and
         // | or
         // ^ xor
-        //estructuras de control
-        //---condicionales---
+
+        //Control structures
+        //---Conditionals---
         if (5 != 10) {
             //bloque de código
         }
@@ -47,6 +52,7 @@ public class First_class {
         } else {
             //bloque de código
         }
+
         int llave = 2;
         switch (llave) {
             case 1:
@@ -59,7 +65,8 @@ public class First_class {
             default:
                 break;
         }
-        //---ciclos, repetitivas, bucles---
+
+        //---Loops---
         while (llave > 5) {
             //bloque de código 
         }
@@ -71,6 +78,7 @@ public class First_class {
         for (String string : args) {
             //bloue de código
         }
+        
         // declaración de una variable ; condición ; incremento 
         for (int i = 0; i < args.length; i++) {
             
