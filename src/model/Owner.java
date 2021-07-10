@@ -13,4 +13,15 @@ public class Owner extends User { // relación de herencia
         return wallet;
     }
 
+    public String compareWallet(Wallet compareWallet){
+        Wallet myWallet = getWallet();
+
+        if (myWallet.getBalance() > compareWallet.getBalance()) {
+            return "My wallet has more balance";
+        } else if (myWallet.getBalance() == compareWallet.getBalance()) {
+            return "Both wallets have the same balance";
+        } else {
+            return "The other wallet has more balance";
+        }
+    }
 }
