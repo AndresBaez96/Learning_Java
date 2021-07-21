@@ -2,9 +2,9 @@ package Retos;
 
 public class Proyecto {
     //Atributos
-    int pTiempo;
-     double pMonto; 
-     double pInteres;
+    private int pTiempo;
+    private double pMonto; 
+    private double pInteres;
     //Métodos
     public Proyecto() {
         super();
