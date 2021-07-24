@@ -8,6 +8,8 @@ public class First_class {
     private char gender;
     private boolean isVaccinated;
 
+    // private static final int ---> Constantes
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
         //Arithmetic operators

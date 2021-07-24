@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public class Wallet {
     
-    public static final int MAX_CAPACITY = 1000000; // Constantes: acceso público, estáticas, final es para asignar un valor, siempre mayus
+    private static final double MAX_CAPACITY = 1000000; // Constantes: acceso público, estáticas, final es para asignar un valor, siempre mayus
+    private static final double TRANSFERENCE_TAX = 0.2; // Porcentaje
     private boolean hasLimit;
-    private int balance; // Saldo
+    private double balance; // Saldo
     private ArrayList<Transaction> transactions; // ArrayList genérico con <> se guarda un solo tipo de datos
 
     // Método constructor (ctor): genera un objeto asociado a la clase
@@ -19,11 +20,11 @@ public class Wallet {
     }
     
     // Método que retorna un str, sirve para ingresar dinero
-    public String saveMoney(int value){ 
+    public String saveMoney(double value){ 
         if (value < 0) {
             return "You must enter a valid quantity";
         } else if (hasLimit && value + balance > MAX_CAPACITY) {
-            return "Balance cannot exceed the maximum capcity";
+            return "Balance cannot exceed the maximum capacity";
         } else {
             balance += value;
             Transaction transaction = new Transaction(value, "today", 1);
@@ -33,7 +34,7 @@ public class Wallet {
     }
     
     // Método que retorna un str, sirve para sacar dinero
-    public String takeMoney(int value) { 
+    public String takeMoney(double value) { 
         if (value > balance) {
             return "The amount is greater than the balance";
         } else {
@@ -44,8 +45,12 @@ public class Wallet {
         }
     }
 
+    public double taxTransfer(double value) {
+        return TRANSFERENCE_TAX*value/100;
+    }
+
     // Método de accesibilidad: devuelve el valor de un atributo
-    public int getBalance() { 
+    public double getBalance() { 
         return balance;
     }
 

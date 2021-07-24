@@ -1,7 +1,7 @@
 package model;
 
 public class Transaction {
-    private int value;
+    private double value;
     private String date;
 
     /*Instrucciones: type
@@ -10,14 +10,14 @@ public class Transaction {
     */
     private int type;
 
-    public Transaction(int value, String date, int type) {
+    public Transaction(double value, String date, int type) {
         super();
         this.value = value;
         this.date = date;
         this.type = type;
     } 
 
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 

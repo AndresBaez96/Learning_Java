@@ -24,4 +24,13 @@ public class Owner extends User { // relación de herencia
             return "The other wallet has more balance";
         }
     }
+
+    public String bankTransfer(Wallet transferWallet,double value) {
+        Wallet myWallet = getWallet();
+        transferWallet.saveMoney(value);
+        myWallet.takeMoney(value + myWallet.taxTransfer(value));
+        return "Succesful transference";
+
+
+    }
 }
