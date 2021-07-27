@@ -1,4 +1,4 @@
-package Retos;
+package Retos.Reto_1;
 
 public class Proyecto {
     //Atributos
