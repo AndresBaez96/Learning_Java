@@ -2,8 +2,8 @@ package Retos.Reto_2;
 
 public class ComputadorPortatil extends Computador { // herencia: Computador --> ComputadorPortatil
     // Constantes
-    private static final int EXTRA_BATTERY = 20;
-    private static final int EXTRA_CHARGER = 20;
+    private static final int EXTRA_BATTERY = 100000;
+    private static final int EXTRA_CHARGER = 80000;
 
     // Atributos
     private int extraBattery;

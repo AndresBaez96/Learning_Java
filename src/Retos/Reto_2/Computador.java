@@ -2,9 +2,9 @@ package Retos.Reto_2;
 
 public class Computador {
     // Constantes
-    public static final double PRECIO_BASE = 30;
-    public static final double PRECIO_MOUSE = 30;
-    private static final double PRECIO_HEADPHONE = 30;
+    public static final double PRECIO_BASE = 1500000;
+    public static final double PRECIO_MOUSE = 60000;
+    private static final double PRECIO_HEADPHONE = 110000;
     
     // Atributos
     private double mouse;

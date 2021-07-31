@@ -2,8 +2,8 @@ package Retos.Reto_2;
 
 public class ComputadorMesa extends Computador { // herencia: Computador --> ComputadorMesa
     // Constantes
-    private static final int CAMERA = 10;
-    private static final int KEYBOARD = 10;
+    private static final int CAMERA = 80000;
+    private static final int KEYBOARD = 160000;
 
     // Atributos
     private int camera;
