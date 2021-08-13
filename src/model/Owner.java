@@ -6,7 +6,7 @@ public class Owner extends User { // relación de herencia
     public Owner(String name) {
         super();
         wallet = new Wallet();
-        setName("Andrés");
+        setName(name);
     }
 
     public Wallet getWallet() {
@@ -30,7 +30,11 @@ public class Owner extends User { // relación de herencia
         transferWallet.saveMoney(value);
         myWallet.takeMoney(value + myWallet.taxTransfer(value));
         return "Succesful transference";
+    }
 
-
+    @Override
+    public String toString() {
+        // Auto-generated method stub
+        return "Name: "+getName();
     }
 }
