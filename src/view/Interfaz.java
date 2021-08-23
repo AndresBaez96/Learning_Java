@@ -1,7 +1,8 @@
 package view;
 
 import javax.swing.JFrame;
-
+import javax.swing.JPanel;
+import java.awt.GridLayout;
 import controller.Controller;
 import model.Wallet;
 import java.awt.BorderLayout;
@@ -10,19 +11,26 @@ public class Interfaz extends JFrame {
     // 1. Crear la relación o atributo
     private PanelOpciones panelOpciones; // relación entre Interfaz con PanelOpciones
     private PanelClientes panelClientes;
+    private PanelWallet panelWallet;
     private Controller controlador;
 
     public Interfaz() {
         super();
-        setSize(600, 400); // Tamaño de la ventana que se abre
+        setSize(650, 400); // Tamaño de la ventana que se abre
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // La ventana se cierra cuando terminga el debug
         setTitle("Wallet");
-        setLayout(new BorderLayout()); // se debe escribir la importación manualmente
+         // se debe escribir la importación manualmente
 
         // 2. Inicializar los atributos
         panelOpciones = new PanelOpciones(this);
         panelClientes = new PanelClientes(this);
+        panelWallet = new PanelWallet(this);
         controlador = new Controller();
+
+        JPanel panelCentral = new JPanel();
+        panelCentral.setLayout(new GridLayout());
+        panelCentral.add(panelClientes);
+        panelCentral.add(panelWallet);
 
         // 3. Modificar las propiedades
 
