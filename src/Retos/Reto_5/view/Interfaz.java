@@ -152,9 +152,6 @@ public class Interfaz extends JFrame implements ActionListener {
             panel.add(table);
             panel.setViewportView(table);
 
-            //Firma
-            this.signature.setText("<html><body><i>Developed by:"+ 
-                                   "<br><i> Andrés Báez </body></html>");
             panelButtons.add(signature, BorderLayout.EAST);
         } else if (event.getActionCommand().equals(QUERY_2)) {
             // Información query
@@ -169,9 +166,6 @@ public class Interfaz extends JFrame implements ActionListener {
             panel.add(table);
             panel.setViewportView(table);
 
-            //Firma
-            this.signature.setText("<html><body><i>Developed by:"+ 
-                                   "<br><i> Andrés Báez </body></html>");
             panelButtons.add(signature, BorderLayout.EAST);
         } else if (event.getActionCommand().equals(QUERY_3)) {
             // Información query
@@ -186,9 +180,6 @@ public class Interfaz extends JFrame implements ActionListener {
             panel.add(table);
             panel.setViewportView(table);
 
-            //Firma
-            this.signature.setText("<html><body><i>Developed by:"+ 
-                                   "<br><i> Andrés Báez </body></html>");
             panelButtons.add(signature, BorderLayout.EAST);
         }
         
